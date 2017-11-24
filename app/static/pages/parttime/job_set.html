@@ -1,0 +1,99 @@
+/../assets<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>求职意向设置</title>
+		<link rel="stylesheet" type="text/css" href="../../assets/css/jobset.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/public/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/icon/style.css" />
+		<script src="../../assets/js/jquery.js"></script>
+	</head>
+	<body>
+		<main class="y_auto">
+			<!--头部 start-->
+			<header class="bgff">
+				<div class="head_nav cen fz18">
+					<span>求职意向设置</span>
+					<a href="#" class="black"><span class="reset">重置</span></a>
+				</div>
+			</header>
+			<!--头部 end-->
+			
+			<!--求职意向设置 start-->
+			<div class="jobset_box">
+				<div class="ptb20">
+					<div class="flex-space-between fz16"><span>我的意向工作地址</span><span><a href="#" class="red">+添加</a> </span></div>
+					<div class="cen">
+						<div><img src="../../assets/img/address.png"/ class="jobset_address"></div>
+						<div class="cl7d fz12">添加意向工作地址能帮你更好的找到工作哦</div>
+					</div>
+				</div>
+				<div class="ptb20">
+					<div class="fz16"><span>工作类型(多选)</span></div>
+					<div class="jobset_type">
+						<ul>
+							<li class="active">服务员</li>
+							<li>店员</li>
+							<li>展会</li>
+							<li>促销</li>
+							<li>派发</li>
+							<li>推广</li>
+							<li>文员</li>
+							<li>助教</li>
+							<li>客服</li>
+							<li>礼仪</li>
+							<li>翻译</li>
+							<li>充场</li>
+							<li>实习</li>
+							<li>问卷调查</li>
+							<li>物流仓储</li>
+							<li>校园兼职</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ptb20">
+					<div class="fz16"><span>空闲时间(多选)</span></div>
+					<div class="jobset_type">
+						<div class="pt10 cl88">> 在一周的哪些天</div>
+						<ul>
+							<li class="active">周日</li>
+							<li>周一</li>
+							<li>周二</li>
+							<li>周三</li>
+							<li>周四</li>
+							<li>周五</li>
+							<li>周六</li>
+						</ul>
+					</div>
+					<div class="jobset_type">
+						<div class="pt10 cl88">> 在一天的哪些时段</div>
+						<ul>
+							<li class="active">上午</li>
+							<li>下午</li>
+							<li>晚上</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--求职意向设置 end-->
+		</mian>
+<script>
+	$(function(){
+		$(".jobset_type li").click(function(){
+			if($(this).hasClass("active")){
+				$(this).removeClass("active");
+				console.log(11)
+			}else{
+				$(this).addClass("active");
+			}
+		});
+	});
+			
+</script>
+</body>
+</html>

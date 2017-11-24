@@ -1,0 +1,19 @@
+.mt120{margin-top: 120px;}
+.search_box{position: relative;height:60px;line-height: 55px;background: #fff;margin-top: 50px;}
+.search_text{width:88%; height: 30px; border: 1px solid #888; padding: 0 10px 0 30px; box-shadow: 0 2px 8px rgba(80,80,80,0.2);}
+.search{position: absolute; top: 22px; left: 20px;}
+.searchbtn{background: #3E8F3E; color: #fff; height: 35px; line-height: 35px; width: 100%; border-radius: 50%; font-size: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.4);}
+.nowcity_box{padding: 0 5% 20px;}
+#nowcity{height: 35px; line-height: 35px;margin: 10px 30px;color: #ed1e14;background: #fbe9e8;border: 1px solid #DF3A32;border-radius: 16px;text-align: center;}
+.city_box{}
+#citylist #title{font-size: 16px;display: block;width: 90%;height: 40px;line-height: 40px;border-bottom: 1px solid #888;margin: 0 5%;color: #3E8F3E;font-weight: 600;}
+#citylist #cityname{line-height: 30px;margin: 2% 8%;color: #888888;}
+#citylist #cityname li{border-bottom: 1px solid #F1F1F1;}
+#citylist #cityname li a{color: #888888;}
+#listname{position: fixed;top: 80px;right: 10px;}
+#listname ul{position: relative;font-size: 12px;color: darkorange;text-align: center;}
+#listname li{width: 15px;}
+#listname li a{color: darkorange;}
+#searchname{line-height: 35px;margin: 0 5%;}
+#searchname li{border-bottom: 1px solid #F1F1F1;}
+#searchname li a{color: #888888;}

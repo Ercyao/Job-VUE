@@ -1,0 +1,42 @@
+/* * 主页 页面 start
+*/
+.index_head{position: relative;z-index: 1;width: 100%;}
+/*轮播图的点 start*/
+.index_head .dot{position: absolute; top: 205px; width: 20%; margin: 0 40%; text-align: center; z-index: 2; display: -webkit-flex; display: flex; -webkit-justify-content: space-between; justify-content: space-between;}
+.index_head .dot li{display: inline-block;width: 10px; height: 10px; border-radius: 50%; opacity: 0.8; background: #f1f1f1;}
+.index_head .dot .current{background: #3495fe;!important;}
+/*轮播图的点 end*/
+/*头部的城市和搜索 start*/
+.index_sel_sea_box{position: fixed; top: 0;left: 0; z-index: 5; width: 90%; height: 30px; padding: 10px 5%;}
+.index_search{position: relative; width: 72%; height: 30px; margin-left: 10px;}
+.index_search .bg{position: absolute;width: 100%;height: 30px;opacity: 0.3;background: #FFFFFF;border-radius: 7px;}
+.index_search .text{position: absolute;z-index: 6;left: 20px; line-height: 30px;}
+/*头部的城市和搜索 end*/
+/* * 主体 start * */
+.index_headline{height: 30px; border-bottom: 1px solid #DCDCDC;}
+.index_box{width: 94%; padding: 2em 3%;}
+/*分类查看 start*/
+.index_classify{color: #fff;overflow-x: hidden;overflow-y: auto;}
+.index_classify ul{width: 112%;}
+.index_classify ul li{float: left; width: 22%; margin: 10px 2%; padding: 5px 7px; border-radius: 8px; box-shadow: 0 5px 8px rgba(0,0,0,0.2);}
+.index_classify ul li span{font-weight: bold;}
+.index_classify ul li a{color: #FFFFFF;}
+/*分类查看 end*/
+/*精选推荐 start*/
+.index_look{background: #df3a32; color: #fff; padding: 5px 35px; border-radius: 3px; box-shadow: 0 5px 8px rgba(0,0,0,0.2);}
+/*精选推荐 end*/
+/* * 主体 end * */
+/* * 主页 页面 end
+*/
+/* * 搜索页 页面 start
+*/
+.search_head{position: fixed; top: 0; left: 0; z-index: 5; width: 90%; height: 30px; padding: 10px 5%; line-height: 30px;}
+.search_head a{color: #fff;}
+.search_text{border: 0; width: 91%; border-radius: 5px; height: 30px; padding: 0 5px;}
+.search_box{margin: 70px 5% 50px;}
+.search_box .search_headline{height: 30px;line-height: 30px;}
+#hot_search ul{margin: 0 5%;}
+#hot_search li{float: left;padding: 5px 8px;margin: 5px;color: #888;border-radius: 5px;border: 1px solid #DCDCDC;box-shadow: 0px 0px 8px rgba(228, 226, 226, 0.7);}
+.search_clearbtn{width: 100%; border: 0; background: #ff473d; color: #fff; height: 35px; margin: 20px 0;}
+/* * 搜索页 页面 end
+*/

@@ -1,0 +1,9 @@
+/* * 求职意见设置 页面 start * */
+.head_nav .reset{position: absolute;top: 0;right: 15px;font-size: 14px;}
+.jobset_box{margin: 50px 5%;}
+.jobset_address{width: 50%;margin: 65px 0 30px;}
+.jobset_type{width: 100%;overflow-x: hidden;}
+.jobset_type ul{width: 110%;}
+.jobset_type ul li{float: left;width: 20%;height: 30px;line-height: 30px;color: #888;font-size: 12PX;text-align: center;margin: 15px 2.8% 3px 0;border-radius: 5px;border: 1px solid #DCDCDC;box-shadow: 0px 0px 8px rgba(226, 226, 226, 0.9);}
+.jobset_type ul .active{color: #ff473d; background: #fff0f0; border-color: #ff473d!important;}
+/* * 求职意见设置 页面 end * */

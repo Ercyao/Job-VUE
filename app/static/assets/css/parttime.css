@@ -1,0 +1,62 @@
+/* * 全部兼职信息 页面 start * */
+/*头部菜单栏 start*/
+.all_inf_menubox{position: fixed;left: 0;top: 0;z-index: 5;width: 100%;background: #FFFFFF;box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+/*border-bottom: 1px solid #999999;*/}
+.all_inf_menubox #all_nav{width: 104%; height: 21px; margin: 12px 0; overflow-x: hidden;}
+.all_inf_menubox li{float: left; width: 32%;border-right: 1px solid #ddd;}
+.all_inf_menubox li a{color: #000000;}
+.all_inf_menubox .line{font-size: 18px;width: 5%;color: #999999;}
+/*子菜单 start*/
+.all_inf_Submenu,
+.all_inf_Submenu2{position: absolute;top: 45px; left: 0; right: 0; z-index: 5;background: #FFFFFF;border-top: 1px solid #999999;}
+/*类型和区域 start*/
+.all_inf_Submenu{height: 265px; overflow-y: auto; border-bottom: 1px solid #999999;}
+.all_inf_Submenu ol{list-style-type: none; line-height: 35px;}
+.all_inf_Submenu ol .ol_active{background-color: rgb(247,247,247); color: rgb(255,71,61);}
+/*类型和区域 end*/
+/*时间和筛选 start*/
+.all_inf_Submenu2{height: 200px;}
+/*按钮 start*/
+.all_inf_Submenu2 .btn{position: absolute;left: 0;bottom: 0;width: 100%;height: 40px;}
+/*取消按钮*/
+.all_inf_Submenu2 .cancel{width: 40%;height: 40px;border: 0;background: #000000;font-size: 16px;color: #FFFFFF;}
+/*确定按钮*/
+.all_inf_Submenu2 .time{width: 60%;}
+.all_inf_Submenu2 .screen{width: 100%;}
+.all_inf_Submenu2 .confirmbtn{height: 40px;border: 0;background: #ff473d;font-size: 16px;color: #FFFFFF;}
+/*按钮 end*/
+/*筛选 start*/
+.all_inf_Submenu2 .lump{padding: 20px 10% 10px;overflow-y: auto;}
+.all_inf_Submenu2 .option{margin: 20px 0;}
+.all_inf_Submenu2 .option li{float: left;width: 26.2%;height: 30px;line-height: 30px;margin: 10px 8px;border: 1px solid ;border-color: #dcdcdc;}
+.all_inf_Submenu2 .op_active{color: #ff473d;background: #fff0f0;border-color: #ff473d!important;}
+/*筛选 end*/
+/*时间和筛选 end*/
+/*子菜单 end*/
+.all_inf_shade{position: fixed; z-index: 2; width: 100%; height: 100%; opacity: 0.4; background: #000;}
+/*头部菜单栏 end*/
+/* * 全部兼职信息 页面 end * */
+/* * 兼职详情 页面 start * */
+.details_box{margin: 45px 0;}
+.details_box section{padding:1.4em 3%;background: #FFFFFF;line-height: 25px;}
+.details_box section .text_time{height: 23px;width: 60%;padding: 0 10px;margin: 8px;}
+.details_headline{font-size: 16px;height: 35px;line-height: 20px;border-bottom: 1px solid #DCDCDC;}
+.pr_ti span{padding: 0 1px;}
+.pt_icon_wh{width: 2em; height: 2.2em;}
+/*底部栏*/
+.details_footer{position: fixed;left: 0;right: 0;bottom: 0;z-index: 5;color: #FFFFFF;}
+.details_footer div{float: left;height: 40px;line-height: 40px;}
+.details_footer a{color: #FFFFFF;}
+.details_footer .zx_sc{width: 46%;background: #000000;}
+.details_footer .apply{width: 54%;background: #ff473d;}
+.details_footer .confirm{width: 100%;background: #ff473d;}
+/* * 兼职详情 页面 end * */
+/*确认兼职报名信息 页面 start*/
+.reg_column{padding: 10px 0;}
+.reg_details .bd{border-bottom: 1px solid #DCDCDC;}
+.reg_details .identity{font-size: 20px;font-weight: 600;padding: 10px 0 20px;}
+.reg_fill_box{height: 100px;background: #B2DBA1;padding: 10px;color: #fff;}
+.reg_fill_box div{margin: 10px 0;}
+.reg_fill_box span{width: 22%;}
+.reg_fill_box input{height: 35px;width: 70%;padding: 0 10px;border-radius: 5px;border: 1px solid #DCDCDC;}
+/*确认兼职报名信息 页面 end*/

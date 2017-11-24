@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>城市选择</title>
+		<link rel="stylesheet" type="text/css" href="../../assets/css/city.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/public/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/icon/style.css" />
+		<script src="../../assets/js/jquery.js"></script>
+</head>
+
+<body>
+	       <!--导航栏  start-->
+			<header><div class="head_nav cen fz18"><span>城市选择</span></div>	</header>
+			<!--导航栏  end-->
+			
+			 <!--搜索  start-->
+	        <div class="search_box flex-space-around cen">
+				<div style="width: 78%"><span class="icon-search search"></span><input type="text" placeholder="请输入兼职名称或类型" class="search_text"/></div>
+				<div style="width: 12%"><a href="#"><span class="searchbtn">搜索</span></a></div>
+			</div>
+			<!--搜索  end-->	
+			<div id="search_city"  class="none"></div>
+			<div class="block" id="city">
+				<!--当前城市 start-->
+				<div class="nowcity_box fz16"><span>当前定位</span><div id="nowcity" data-id=""></div></div>
+				<!--当前城市  end-->
+				<div class="pt10 bgf1"></div>
+					
+				<!--城市列表 start-->
+				<div class="city_box">
+					<div id="citylist"></div>
+					<div id="listname" class="none"></div>
+				</div>
+				<!--城市列表 end-->
+			</div>
+			
+<script type="text/javascript"> 
+	/*当前城市定位*/
+	$.getScript('http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js', function(_result) {
+		if (remote_ip_info.ret == '1') {
+			document.getElementById("nowcity").innerHTML = remote_ip_info.city+'市';
+		} else { 
+			alert('没有找到匹配的IP地址信息！');
+		}
+	});
+	/*当前城市定位  end*/
+	$(function() { 
+		/*滚动显示首字母*/
+		$(window).scroll(function() { 
+			if($(window).scrollTop()>=100){
+				$("#listname").show(); 
+			}else{
+				$("#listname").hide();  
+			}
+		});
+		/*滚动显示首字母 end*/
+		/*搜索框搜索后显示*/
+		var i, j,tags,textval,z = "";
+		$(".searchbtn").click(function(){
+			textval = $(".search_text").val();
+			 z+="<ul id='searchname'>";
+			for (i in cityData.list) {			
+			    for (j in cityData.list[i].cities) {
+			    	tags=cityData.list[i].cities[j].tags;
+			    	if(tags.indexOf(textval) > 0 ){
+					   z += "<li data-id="+cityData.list[i].cities[j].cityid+">"+"<a href="+'../home/index.html?data-id='+cityData.list[i].cities[j].cityid+">"+ cityData.list[i].cities[j].name + "</li>";
+					}
+			    }
+			 }
+			 z+= "</ul>";			
+			$("#search_city").show();
+			$("#city").hide();
+			$("#search_city").append(z);			 
+		});
+		/*搜索框搜索后显示 end*/
+		var ids;
+		$("#nowcity").click(function(){
+			textval = $("#nowcity").val();
+			for (i in cityData.list) {			
+			    for (j in cityData.list[i].cities) {
+			    	name=cityData.list[i].cities[j].name;
+			    	if(name.indexOf(textval) > 0 ){
+			    		ids=cityData.list[i].cities[j].cityid;
+					}
+			    }
+			}	
+			console.log(ids)
+			/*location.href="'../home/index.html?data-id='+ids"; */
+		});
+		/*搜索框搜索后显示 end*/
+	}); 
+</script>
+<script type="text/javascript" src="../../assets/js/city.js"></script>
+<script type="text/javascript">
+	/*显示所有城市*/
+	var i, j,x = "",y = "";
+	for (i in cityData.list) {
+	    x += "<a id='title' name="+cityData.list[i].name+">" + cityData.list[i].name + "</a>";
+	    x+="<ul id='cityname'>";
+	    for (j in cityData.list[i].cities) {
+	        x += "<li data-id="+cityData.list[i].cities[j].cityid+">"+"<a href="+'../home/index.html?data-id='+cityData.list[i].cities[j].cityid+">"+cityData.list[i].cities[j].name  +"</a>"+ "</li>";
+	    }
+	    x+= "</ul>";
+	     x+= "<p class='pt10 bgf1'></p>";
+	}
+	document.getElementById("citylist").innerHTML = x;
+    y+="<ul>";
+	for (i in cityData.list) {		
+	    y += "<li>" +"<a href="+'#'+cityData.list[i].name+">"+ cityData.list[i].name +"</a>"+ "</li>";
+	}
+	y+= "</ul>";
+	document.getElementById("listname").innerHTML = y;
+	/*显示所有城市  end*/
+
+</script>
+	</body>
+</html>

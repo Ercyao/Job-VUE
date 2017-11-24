@@ -1,0 +1,27 @@
+
+/* * 个人中心 页面 start * */
+/*个人中心的icon图标设置 start*/
+.icon_medel_no{vertical-align: middle; width: 20px; height: 20px;background-image: url(../img/medal_no.png);background-size: 100% 100%;}
+/*icon图标 end*/
+.per_cen_ul_box{width: 100.4%;overflow-x: hidden;}
+.per_cen_ul_box li{padding: 15px 2%;border-bottom: 1px solid #DCDCDC;}
+.per_cen_ul_box a{color: #5E5E5E;}
+/* * 个人中心 页面 end * */
+/* * 我的简历信息 页面 start * */
+/*头部*/
+.resume_head{width: 100%;height:180px;
+/*background: #FF473D;*/}
+.resume_nav{position: fixed;top: 0;left: 0;z-index: 5;width: 92%;padding: 10px 4%;}
+.head_portrait{width: 80px; height: 80px; padding: 8px; border-radius: 50%; border: 1px solid #fff;}
+.head_portrait img{width: 80px; height: 80px; border-radius: 50%;}
+.pc_mtb{margin: 41px auto 5px;}
+.res_mtb{margin: 0 auto 5px;}
+.pc_head_bg{background: url(../img/head_bg.jpg); background-size: 100% 100%;}
+.res_head_bg{background: url(../img/load.jpg); background-size: 100% 100%;}
+/*信息完善度*/
+.resume_box{margin: 10px 0;}
+.resume_block{background: #FFFFFF;margin: 10px 0;overflow-y: auto;padding:0 10px;box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);}
+.resume_block a{color: #000000;}
+.resume_block .block_left{width: 85%;line-height: 40px;;}
+.resume_block .block_right{line-height: 85px;}
+/* * 我的简历信息 页面 end * */

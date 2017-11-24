@@ -1,0 +1,72 @@
+/*公共样式*/
+*,body{margin: 0;padding: 0;}
+html,body{font-family: "微软雅黑";font-size: 14px; overflow-x: hidden;}
+img{border: 0 none; width: 100%; height: auto; margin: auto; max-width: 100%; vertical-align: top; letter-spacing: 0;}
+a{text-decoration: none;}
+ul{list-style-type: none;}
+span{display: inline-block;}
+/*公共样式*/
+.fl{float: left;}
+.fr{float: right;}
+.none{display: none;}
+.block{display: block;}
+.fz10{font-size: 10px;}
+.fz12{font-size: 12px;}
+.fz16{font-size: 16px;}
+.fz18{font-size: 18px;}
+.fz20{font-size: 20px;}
+.fz24{font-size: 24px;}
+.fz26{font-size: 26px;}
+.fz34{font-size: 34px;}
+.fz38{font-size: 38px;}
+.h15{height: 15px;}
+.h30{height: 30px;}
+.h35{height: 35px;}
+.h40{height: 40px;}
+.lh30{line-height: 30px;}
+.cen{text-align: center;}
+.bold{font-weight: bold;}
+.cl7d{color: #7d7d7d;}
+.cl88{color: #888888;}
+.red{color: #ff473d!important;}
+.black{color: #000000;}
+.blue{color: #337AB7;}
+.white{color: #FFFFFF;}
+.bgfe{background: #fee69d;}
+.bg9a{background: #9ACFEA;}
+.bge7{background: #e7e7e7;}
+.bgf1{background: #F1F1F1;}
+.bgff{background: #FFFFFF;}
+.op09{opacity: 0.9;}
+.mtb20{margin: 20px 0;}
+.pl5{padding-left: 5px;}
+.pl15{padding-left: 15px;}
+.pr5{padding-right: 5px;}
+.pt8{padding-top: 8px;}
+.pt10{padding-top: 10px;}
+.pt40{padding-top: 40px;}
+.ptb20{padding: 20px 0;}
+.h210{height: 210px;}
+.w25{width: 25%;}
+.w10{width: 10%;}
+.w75{width: 75%;}
+.w80{width: 80%;}
+.mt5{margin-top: 5px;}
+.mtb50{margin: 50px 0;}
+.mb50{margin-bottom: 50px;}
+.y_auto{overflow-y: auto;} /*公共样式 end*/
+/*弹性盒子 start*/
+.flex-space-between{display: -webkit-flex; display: flex; -webkit-justify-content: space-between; justify-content: space-between;}
+.flex-space-around{display: -webkit-flex; display: flex; -webkit-justify-content: space-around; justify-content: space-around;}
+/*弹性盒子 end*/
+/*头部导航栏 start*/
+.head_nav{position: fixed; left: 0; right: 0; top: 0; z-index: 5; background: #ffffff; height: 45px; line-height: 45px; box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);}
+/*头部导航栏 end*/
+/*标题箭头 start*/
+.right_arrows{width: 0.4em; vertical-align: text-top; margin-top: 3px; border-top: 5px solid transparent; border-left: 10px solid #2399fd; border-bottom: 5px solid transparent;}
+/*标题箭头 end*/
+/*兼职信息 start*/
+.information_box li{width: 86%; margin: 15px 3%; padding: 10px 4%;background:#FFFFFF;border-radius: 5px;box-shadow: 0px 0px 10px rgba(226, 235, 130, 0.3);}
+.information_content{height: 90px; line-height: 25px;}
+.information_title{width: 200px; padding: 5px 0 10px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+/*兼职信息 end*/
