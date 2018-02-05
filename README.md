@@ -11,29 +11,26 @@ vue项目，简单的静态页面，用于熟悉vue框架，通过新浪的接�
 
 
 # 目录结构
-* app   打包后的文件
+* app   打包后的文件           
 * src
-    *  assets                样式、图片等等
-    *  components            公共组件
-    *  search                搜索
-    *  list                  公共列表页面
-    *  pages                 页面                
-
+    *  assets         样式、图片等等
+    *  components     公共组件
+    *  list           公共列表页面
+    *  pages          页面
 * static
-    *  js       
-    *  json     固定的json数据
-
+    *  js   
+    *  json           固定的json数据
 
 # 效果图
 
-![](https://github.com/Ercyao/Job-VUE/blob/master/img/0-1.png)
-![](https://github.com/Ercyao/Job-VUE/blob/master/img/0-2.png)
-![](https://github.com/Ercyao/Job-VUE/blob/master/img/1-1.jpg)
-![](https://github.com/Ercyao/Job-VUE/blob/master/img/1-2.png)
-![](https://github.com/Ercyao/Job-VUE/blob/master/img/2-1.png)
-![](https://github.com/Ercyao/Job-VUE/blob/master/img/4-1.jpg)
-![](https://github.com/Ercyao/Job-VUE/blob/master/img/4-2.jpg)
-![](https://github.com/Ercyao/Job-VUE/blob/master/img/4-3.jpg)
+![](https://github.com/Ercyao/VUE-parttimeJob/blob/master/0-1.jpg)
+![](https://github.com/Ercyao/VUE-parttimeJob/blob/master/0-2.jpg)
+![](https://github.com/Ercyao/VUE-parttimeJob/blob/master/1-1.jpg)
+![](https://github.com/Ercyao/VUE-parttimeJob/blob/master/1-2.jpg)
+![](https://github.com/Ercyao/VUE-parttimeJob/blob/master/2-1.jpg)
+![](https://github.com/Ercyao/VUE-parttimeJob/blob/master/4-1.jpg)
+![](https://github.com/Ercyao/VUE-parttimeJob/blob/master/4-2.jpg)
+![](https://github.com/Ercyao/VUE-parttimeJob/blob/master/4-3.jpg)
 
 
 
